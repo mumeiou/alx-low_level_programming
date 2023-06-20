@@ -6,15 +6,14 @@
 #include <stdio.h>
 #include <string.h>
 
-#define FILE_NAME __FILE__
-
 /**
  * main - Print file name
  * Return: 0
  */
 int main(void)
 {
-    puts(FILE_NAME);
+    char name[256] = __FILE__;
+    puts(name);
 
     return (0);
 }
