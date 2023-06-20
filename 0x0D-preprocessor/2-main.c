@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - Print file name
  * Return: 0
  */
