@@ -12,7 +12,7 @@
  */
 int main(void)
 {
-    char name[256] = __FILE__;
+    char name[5000] = __FILE__;
     puts(name);
 
     return (0);
