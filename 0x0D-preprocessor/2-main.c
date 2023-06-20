@@ -13,7 +13,7 @@
  */
 int main(void)
 {
-    printf("%s\n", FILE_NAME);
+    puts(FILE_NAME);
 
     return (0);
 }
