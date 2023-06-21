@@ -7,7 +7,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - 
+ * array_iterator - iterates over an array of integers to perform action
  * @array: array of int
  * @size: the size of the array
  * @action: pointer to the function of action. takes int
