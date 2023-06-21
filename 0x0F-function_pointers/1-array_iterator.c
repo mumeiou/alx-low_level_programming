@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "function_pointers.h"
+#include <stdio.h> /* standard input output */
+#include "function_pointers.h" /* FUNCTION_POINTERS_H */
 
 /**
  * array_iterator - iterates over an array of integers to perform action
