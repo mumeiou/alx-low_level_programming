@@ -1,7 +1,7 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
-typedef int size_t;
+typedef long long size_t;
 
 void print_name(char *name, void (*f)(char *));
 
