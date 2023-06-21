@@ -7,12 +7,10 @@
 #include "3-calc.h"
 
 /**
- * int_index - searches for an integer in an array
- * @array: array of int
- * @size: the size of the array
- * @cmp: pointer to the function to be used to compare values
+ * get_op_func - matches passed operation to correct funtion
+ * @s: passes operation
  * 
- * Return: the index of the first element for which the cmp function does not return 0. -1 otherwise.
+ * Return: pointer to correct function needed for the operation
  */
 
 int (*get_op_func(char *s))(int, int)
