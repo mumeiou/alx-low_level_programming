@@ -13,7 +13,7 @@
  * @argv: array of strings of arguments
  * 
  * Return: 98 for wrong number of arguments. 99 for wrong operator. 
- * 100 for invalid division. otherwise result of operation.
+ * 100 for invalid division. otherwise 0.
  */
 
 int main(int argc, char *argv[])
@@ -40,5 +40,7 @@ int main(int argc, char *argv[])
         return 100;
     }
 
-    return f(a, b);
+    puts(f(a, b));
+
+    return 0;
 }
