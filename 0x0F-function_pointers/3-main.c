@@ -18,9 +18,9 @@
 
 int main(int argc, char *argv[])
 {
-    int (*f)(int a, int b) = get_op_func(argv[2]);
-    int a = atoi(argv[1]);
-    int b = atoi(argv[3]);
+    int (*f)(int a, int b);
+    int a;
+    int b;
     int result = 0;
 
     if (argc != 4)
@@ -29,13 +29,17 @@ int main(int argc, char *argv[])
         return 98;
     }
 
-    if (op == NULL)
+    a = atoi(argv[1]);
+    b = atoi(argv[3]);
+    f = get_op_func(argv[2]);
+
+    if (f == NULL)
     {
         puts("Error");
         return 99;
     }
 
-    if ((argv[2] == '/' || argv[2] == '/') && b == 0)
+    if ((argv[2] == '%' || argv[2] == '/') && b == 0)
     {
         puts("Error");
         return 100;
