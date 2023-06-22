@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
     int (*f)(int a, int b) = get_op_func(argv[2]);
     int a = atoi(argv[1]);
     int b = atoi(argv[3]);
+    int result = 0;
 
     if (argc != 4)
     {
@@ -40,7 +41,8 @@ int main(int argc, char *argv[])
         return 100;
     }
 
-    puts(f(a, b));
+    result = f(a, b);
+    puts(result);
 
     return 0;
 }
